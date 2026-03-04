@@ -1,0 +1,15 @@
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-list__empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cart-list__empty p {
+  font-size: 1.1rem;
+  color: var(--neu-text-muted);
+}

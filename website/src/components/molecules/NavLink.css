@@ -1,0 +1,25 @@
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--neu-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--neu-text-secondary);
+  text-decoration: none;
+  transition: var(--neu-transition);
+}
+
+.nav-link:hover {
+  color: var(--neu-accent);
+  background: rgba(74, 108, 247, 0.06);
+}
+
+.nav-link--active {
+  color: var(--neu-accent);
+  background: var(--neu-bg);
+  box-shadow: inset 3px 3px 5px var(--neu-shadow-dark),
+              inset -3px -3px 5px var(--neu-shadow-light);
+  font-weight: 600;
+}
