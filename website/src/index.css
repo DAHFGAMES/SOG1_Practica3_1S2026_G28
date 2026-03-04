@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
   --neu-bg: #e0e5ec;
@@ -7,10 +7,12 @@
   --neu-text-primary: #2d3748;
   --neu-text-secondary: #5a6a7e;
   --neu-text-muted: #8a9ab5;
-  --neu-accent: #4a6cf7;
-  --neu-accent-hover: #3b5de7;
-  --neu-accent-light: #e8edff;
-  --neu-success: #38b2ac;
+  --neu-accent: #3b82f6;
+  --neu-accent-hover: #2563eb;
+  --neu-accent-light: #eff6ff;
+  --neu-success: #10b981;
+  --neu-gradient: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  --neu-gradient-hover: linear-gradient(135deg, #059669 0%, #2563eb 100%);
   --neu-danger: #e53e3e;
   --neu-warning: #ecc94b;
   --neu-radius: 16px;
@@ -18,7 +20,11 @@
   --neu-radius-lg: 24px;
   --neu-transition: all 0.2s ease;
 
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   line-height: 1.6;
   font-weight: 400;
   color: var(--neu-text-primary);
@@ -59,16 +65,29 @@ a:hover {
   color: var(--neu-accent-hover);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--neu-text-primary);
   font-weight: 600;
   line-height: 1.3;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
 
 p {
   color: var(--neu-text-secondary);
@@ -82,26 +101,36 @@ img {
 
 .neu-raised {
   background: var(--neu-bg);
-  box-shadow: 8px 8px 16px var(--neu-shadow-dark),
-              -8px -8px 16px var(--neu-shadow-light);
+  box-shadow:
+    8px 8px 16px var(--neu-shadow-dark),
+    -8px -8px 16px var(--neu-shadow-light);
   border-radius: var(--neu-radius);
 }
 
 .neu-pressed {
   background: var(--neu-bg);
-  box-shadow: inset 4px 4px 8px var(--neu-shadow-dark),
-              inset -4px -4px 8px var(--neu-shadow-light);
+  box-shadow:
+    inset 4px 4px 8px var(--neu-shadow-dark),
+    inset -4px -4px 8px var(--neu-shadow-light);
   border-radius: var(--neu-radius);
 }
 
 .neu-flat {
   background: var(--neu-bg);
-  box-shadow: 4px 4px 10px var(--neu-shadow-dark),
-              -4px -4px 10px var(--neu-shadow-light);
+  box-shadow:
+    4px 4px 10px var(--neu-shadow-dark),
+    -4px -4px 10px var(--neu-shadow-light);
   border-radius: var(--neu-radius);
 }
 
 ::selection {
   background-color: var(--neu-accent);
   color: white;
+}
+
+.page-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }

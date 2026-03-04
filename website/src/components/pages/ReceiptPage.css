@@ -1,6 +1,8 @@
 .receipt-page {
   max-width: 780px;
+  width: 100%;
   margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
 .receipt-page__empty {
@@ -65,7 +67,7 @@
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: var(--neu-accent);
+  background: var(--neu-gradient);
   color: white;
   font-weight: 700;
   font-size: 1.3rem;

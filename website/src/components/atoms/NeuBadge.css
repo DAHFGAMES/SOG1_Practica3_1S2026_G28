@@ -17,8 +17,8 @@
 }
 
 .neu-badge--accent {
-  background: var(--neu-accent-light);
-  color: var(--neu-accent);
+  background: var(--neu-gradient);
+  color: white;
   box-shadow: 2px 2px 4px var(--neu-shadow-dark),
               -2px -2px 4px var(--neu-shadow-light);
 }

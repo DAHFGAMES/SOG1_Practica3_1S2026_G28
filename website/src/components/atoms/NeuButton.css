@@ -39,26 +39,29 @@
 
 /* Variants */
 .neu-btn--primary {
-  background: var(--neu-accent);
+  background: var(--neu-gradient);
   color: white;
-  box-shadow: 4px 4px 8px var(--neu-shadow-dark),
-              -4px -4px 8px var(--neu-shadow-light);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3),
+              0 2px 6px rgba(59, 130, 246, 0.2);
 }
 
 .neu-btn--primary:hover {
-  background: var(--neu-accent-hover);
-  box-shadow: 2px 2px 5px var(--neu-shadow-dark),
-              -2px -2px 5px var(--neu-shadow-light);
+  background: var(--neu-gradient-hover);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4),
+              0 3px 8px rgba(59, 130, 246, 0.25);
+  transform: translateY(-1px);
 }
 
 .neu-btn--primary:active {
-  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2),
-              inset -3px -3px 6px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.25);
+  transform: translateY(0);
 }
 
 .neu-btn--secondary {
   background: var(--neu-bg);
   color: var(--neu-accent);
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
 }
 
 .neu-btn--danger {
