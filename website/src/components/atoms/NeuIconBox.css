@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--neu-radius);
-  background: var(--neu-bg);
+  background: var(--neu-gradient);
   box-shadow: 4px 4px 8px var(--neu-shadow-dark),
               -4px -4px 8px var(--neu-shadow-light);
-  color: var(--neu-accent);
+  color: white;
 }
 
 .neu-icon-box--sm {

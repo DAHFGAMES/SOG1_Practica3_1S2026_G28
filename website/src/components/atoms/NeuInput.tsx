@@ -10,6 +10,9 @@ interface NeuInputProps {
   required?: boolean;
   className?: string;
   style?: CSSProperties;
+  maxLength?: number;
+  inputMode?: React.InputHTMLAttributes<HTMLInputElement>['inputMode'];
+  pattern?: string;
 }
 
 export default function NeuInput({
@@ -21,6 +24,9 @@ export default function NeuInput({
   required = false,
   className = '',
   style,
+  maxLength,
+  inputMode,
+  pattern,
 }: NeuInputProps) {
   return (
     <div className={`neu-input-wrapper ${className}`} style={style}>
@@ -37,6 +43,9 @@ export default function NeuInput({
         placeholder={placeholder}
         required={required}
         className="neu-input"
+        maxLength={maxLength}
+        inputMode={inputMode}
+        pattern={pattern}
       />
     </div>
   );
