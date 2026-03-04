@@ -1,0 +1,36 @@
+.neu-card {
+  border-radius: var(--neu-radius);
+  transition: var(--neu-transition);
+}
+
+.neu-card--raised {
+  background: var(--neu-bg);
+  box-shadow: 8px 8px 16px var(--neu-shadow-dark),
+              -8px -8px 16px var(--neu-shadow-light);
+}
+
+.neu-card--pressed {
+  background: var(--neu-bg);
+  box-shadow: inset 4px 4px 8px var(--neu-shadow-dark),
+              inset -4px -4px 8px var(--neu-shadow-light);
+}
+
+.neu-card--flat {
+  background: var(--neu-bg);
+  box-shadow: 4px 4px 10px var(--neu-shadow-dark),
+              -4px -4px 10px var(--neu-shadow-light);
+}
+
+.neu-card--clickable {
+  cursor: pointer;
+}
+
+.neu-card--clickable:hover {
+  box-shadow: 6px 6px 12px var(--neu-shadow-dark),
+              -6px -6px 12px var(--neu-shadow-light);
+}
+
+.neu-card--clickable:active {
+  box-shadow: inset 4px 4px 8px var(--neu-shadow-dark),
+              inset -4px -4px 8px var(--neu-shadow-light);
+}
