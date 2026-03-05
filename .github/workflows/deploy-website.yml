@@ -1,10 +1,8 @@
 name: Deploy website to GitHub Pages
 
 on:
-  pull_request:
+  push:
     branches: [main]
-    types:
-      - closed
 
 permissions:
   contents: read
@@ -17,8 +15,6 @@ concurrency:
 
 jobs:
   deploy:
-    # Solo cuando el PR hacia main se haya MERGEADO
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     environment:
       name: github-pages
