@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CheckCircle, Download, ArrowLeft } from 'lucide-react';
+import { CheckCircle, Download, ArrowLeft, Rocket } from 'lucide-react';
 import NeuCard from '../atoms/NeuCard';
 import NeuButton from '../atoms/NeuButton';
 import './ReceiptPage.css';
 
 interface ReceiptItem {
+  productId: string;
   name: string;
   price: number;
   quantity: number;
@@ -174,6 +175,23 @@ export default function ReceiptPage() {
           <ArrowLeft size={16} /> Volver al inicio
         </NeuButton>
       </div>
+
+      {receipt.items.length > 0 && (
+        <div className="receipt-page__welcome-section">
+          <p className="receipt-page__welcome-label">Accede a tu producto</p>
+          <div className="receipt-page__welcome-buttons">
+            {receipt.items.map((item, i) => (
+              <NeuButton
+                key={i}
+                variant="primary"
+                onClick={() => navigate(`/bienvenida/${item.productId}`)}
+              >
+                <Rocket size={16} /> Ir a {item.name}
+              </NeuButton>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
