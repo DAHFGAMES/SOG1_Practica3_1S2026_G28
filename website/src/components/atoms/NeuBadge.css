@@ -1,0 +1,38 @@
+.neu-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.neu-badge--default {
+  background: var(--neu-bg);
+  color: var(--neu-text-secondary);
+  box-shadow: 2px 2px 4px var(--neu-shadow-dark),
+              -2px -2px 4px var(--neu-shadow-light);
+}
+
+.neu-badge--accent {
+  background: var(--neu-gradient);
+  color: white;
+  box-shadow: 2px 2px 4px var(--neu-shadow-dark),
+              -2px -2px 4px var(--neu-shadow-light);
+}
+
+.neu-badge--success {
+  background: #e6fffa;
+  color: var(--neu-success);
+  box-shadow: 2px 2px 4px var(--neu-shadow-dark),
+              -2px -2px 4px var(--neu-shadow-light);
+}
+
+.neu-badge--warning {
+  background: #fefce8;
+  color: #b7791f;
+  box-shadow: 2px 2px 4px var(--neu-shadow-dark),
+              -2px -2px 4px var(--neu-shadow-light);
+}

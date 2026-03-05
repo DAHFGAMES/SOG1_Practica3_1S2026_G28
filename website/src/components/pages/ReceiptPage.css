@@ -1,0 +1,237 @@
+.receipt-page {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.receipt-page__empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.receipt-page__success {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.receipt-page__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--neu-bg);
+  box-shadow: 6px 6px 12px var(--neu-shadow-dark),
+              -6px -6px 12px var(--neu-shadow-light);
+  color: var(--neu-success);
+  margin-bottom: 1rem;
+}
+
+.receipt-page__success h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.receipt-page__success p {
+  color: var(--neu-text-muted);
+}
+
+.receipt-page__card {
+  margin-bottom: 2rem;
+}
+
+.receipt__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.receipt__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.receipt__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--neu-gradient);
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.receipt__brand h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.receipt__brand p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--neu-text-muted);
+}
+
+.receipt__meta {
+  text-align: right;
+}
+
+.receipt__meta p {
+  font-size: 0.82rem;
+  margin: 0.15rem 0;
+  color: var(--neu-text-secondary);
+}
+
+.receipt__divider {
+  height: 1px;
+  background: var(--neu-shadow-dark);
+  margin: 1.25rem 0;
+  opacity: 0.3;
+}
+
+.receipt__billing h4,
+.receipt__items h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--neu-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.receipt__billing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.receipt__billing-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.receipt__label {
+  font-size: 0.75rem;
+  color: var(--neu-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.receipt__billing-grid span:not(.receipt__label) {
+  font-size: 0.9rem;
+  color: var(--neu-text-primary);
+  font-weight: 500;
+}
+
+.receipt__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receipt__table th {
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--neu-text-muted);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(163, 177, 198, 0.3);
+}
+
+.receipt__table td {
+  font-size: 0.9rem;
+  color: var(--neu-text-secondary);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(163, 177, 198, 0.15);
+}
+
+.receipt__table th:last-child,
+.receipt__table td:last-child {
+  text-align: right;
+}
+
+.receipt__total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--neu-text-primary);
+}
+
+.receipt__footer-note {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.receipt__footer-note p {
+  font-size: 0.75rem;
+  color: var(--neu-text-muted);
+  margin: 0.15rem 0;
+}
+
+.receipt-page__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.receipt-page__welcome-section {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.receipt-page__welcome-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--neu-text-muted);
+  margin: 0;
+}
+
+.receipt-page__welcome-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+@media print {
+  .receipt-page__actions,
+  .receipt-page__welcome-section,
+  .navbar,
+  .footer {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .receipt__header {
+    flex-direction: column;
+  }
+
+  .receipt__meta {
+    text-align: left;
+  }
+
+  .receipt__billing-grid {
+    grid-template-columns: 1fr;
+  }
+}
