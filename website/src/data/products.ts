@@ -21,7 +21,7 @@ export const products: Product[] = [
     price: 249.99,
     category: 'Recursos Humanos',
     icon: 'shield',
-    image: '/assets/SafeCase.png',
+    image: './assets/SafeCase.png',
     features: [
       'Módulo de denuncias anónimas y confidenciales',
       'Gestión de casos e investigaciones internas',
@@ -45,7 +45,7 @@ export const products: Product[] = [
     price: 179.99,
     category: 'Gestión Legal',
     icon: 'briefcase',
-    image: '/assets/LegalFlow.png',
+    image: './assets/LegalFlow.png',
     features: [
       'Gestión de clientes y expedientes legales',
       'Asignación de abogados por caso',
@@ -69,7 +69,7 @@ export const products: Product[] = [
     price: 329.99,
     category: 'Smart Home',
     icon: 'smartphone',
-    image: '/assets/HomeHub.png',
+    image: './assets/HomeHub.png',
     features: [
       'Control centralizado de dispositivos IoT',
       'Automatización de rutinas y escenas',
