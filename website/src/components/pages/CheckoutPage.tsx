@@ -15,6 +15,7 @@ export default function CheckoutPage() {
     const receiptData = {
       ...data,
       items: items.map((i) => ({
+        productId: i.product.id,
         name: i.product.name,
         price: i.product.price,
         quantity: i.quantity,

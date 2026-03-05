@@ -1,7 +1,6 @@
 import { ShoppingCart } from 'lucide-react';
 import NeuCard from '../atoms/NeuCard';
 import NeuButton from '../atoms/NeuButton';
-import NeuBadge from '../atoms/NeuBadge';
 import type { Product } from '../../data/products';
 import './ProductCard.css';
 
@@ -20,9 +19,6 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
           className="product-card__image"
         />
         <div className="product-card__image-overlay" />
-        <NeuBadge variant="accent" className="product-card__badge">
-          {product.category}
-        </NeuBadge>
       </div>
 
       <div className="product-card__body">
