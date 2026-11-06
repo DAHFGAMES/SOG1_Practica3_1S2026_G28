@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle, Download, ArrowLeft, Rocket } from 'lucide-react';
 import NeuCard from '../atoms/NeuCard';
@@ -34,15 +34,11 @@ const paymentLabels: Record<string, string> = {
 };
 
 export default function ReceiptPage() {
-  const [receipt, setReceipt] = useState<ReceiptData | null>(null);
   const navigate = useNavigate();
-
-  useEffect(() => {
+  const [receipt] = useState<ReceiptData | null>(() => {
     const data = localStorage.getItem('lastReceipt');
-    if (data) {
-      setReceipt(JSON.parse(data));
-    }
-  }, []);
+    return data ? JSON.parse(data) : null;
+  });
 
   if (!receipt) {
     return (

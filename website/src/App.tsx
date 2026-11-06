@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { CartProvider } from './context/CartContext';
+import { CartProvider } from './context/CartProvider';
 import MainLayout from './components/templates/MainLayout';
 import HomePage from './components/pages/HomePage';
 import CatalogPage from './components/pages/CatalogPage';
